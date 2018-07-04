@@ -1,1 +1,6 @@
 *.csv
+
+# bundler state
+ruby/.bundle
+ruby/vendor/bundle/
+ruby/vendor/ruby/
