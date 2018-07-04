@@ -7,6 +7,7 @@ recommend_instanse = {}
 blank_rows = [7, 13, 19]
 
 CSV.foreach('180628_nanaco.csv', headers: false).with_index do |row, ln|
+  next if ln < 2 || blank_rows.include?(ln)
   case ln
   when female_20_idx
     p recommend_instanse
